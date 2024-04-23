@@ -14,7 +14,7 @@ def main():
     while True:
         text = listen()
         if text:
-            response = get_response(text)
+            response = get_response(text, api_key)
             speak(response)
 
 if __name__ == "__main__":
